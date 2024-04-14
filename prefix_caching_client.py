@@ -20,6 +20,7 @@ for idx in range(N_REQUESTS):
     
     start = time.perf_counter()
     completion = client.completions.create(
+        model=model,
         prompt="Hello_"*N,
         max_tokens=20,
     )
