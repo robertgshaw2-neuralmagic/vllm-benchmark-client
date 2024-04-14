@@ -13,7 +13,7 @@ client = OpenAI(
 models = client.models.list()
 model = models.data[0].id
 
-N = 128
+N = 32
 N_REQUESTS = 5
 
 for idx in range(N_REQUESTS):
