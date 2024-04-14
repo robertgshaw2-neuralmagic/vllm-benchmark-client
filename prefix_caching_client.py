@@ -13,8 +13,8 @@ client = OpenAI(
 models = client.models.list()
 model = models.data[0].id
 
-N = 256
-N_REQUESTS = 10
+N = 128
+N_REQUESTS = 5
 
 for idx in range(N_REQUESTS):
     
@@ -28,5 +28,5 @@ for idx in range(N_REQUESTS):
 
     print(f"Iteration {idx}: {end - start :0.4f}s")
 
-print("Chat completion results:")
-print(chat_completion)
+print("completion results:")
+print(completion)
